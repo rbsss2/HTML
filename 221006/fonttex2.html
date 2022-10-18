@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>fontex2</title>
+<style>
+  h2{
+    /*background-color: orange; */
+    text-align:center;
+    text-transform: capitalize;
+    font-family: 'HY견고딕','맑은 고딕',sans-serif;
+    font-size: 30px;
+  }
+  #txt1{
+    text-shadow: 10px 10px 10px #222; /*x,y,번짐,색상 순*/
+  }
+  #txt2{
+    text-shadow: -10px -10px 5px #727;
+  }
+  #txt3{
+    text-shadow: 0px 10px 5px #423;
+    text-shadow: 0px -10px 5px #423;
+  }
+  #txt4{
+    text-shadow: 10px 10px rgb(243, 210, 26);/*x y (번짐생략) 색상*/
+  }
+  #txt5{
+    color: #178;
+    text-shadow: 0px 10px;/*번짐,색상 생략. 색상은 생략시 글자의 색을 따라 감*/
+  }
+  </style>
+</head>
+<body>
+  <h2 id="txt1">서체 그림자 Text-shadow1</h2>
+  <h2 id="txt2">서체 그림자 Text-shadow2</h2>
+  <h2 id="txt3">서체 그림자 Text-shadow3</h2>
+  <h2 id="txt4">서체 그림자 Text-shadow4</h2>
+  <h2 id="txt5">서체 그림자 Text-shadow5</h2>
+</body>
+</html>

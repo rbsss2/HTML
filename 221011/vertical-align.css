@@ -1,0 +1,24 @@
+@charset "utf-8";
+p{
+  background-color: brown;
+  color:aliceblue;
+  font-weight: bold;
+  font-size:25px;
+}
+.angree{
+  vertical-align:top /*현재 요소와 자손들 모두 top 기준*/
+}
+.maketrouble{
+  vertical-align:baseline; /*기본값, 텍스트와 같이 되어 이미지가 사진과 같이 표기됨*/
+}
+.injeolmi{
+  vertical-align:bottom; /*현재 요소와 자손들 모두 bottom 기준*/
+}
+.sleep{
+  vertical-align:middle;/*부모기준 (baseline 기준으로 글자 높이의 반*/
+  vertical-align:text-top;/*부모 기준 정렬*/
+  vertical-align:text-bottom;/**/
+}
+.cute{
+  /* vertical-aling:bottom; */
+}

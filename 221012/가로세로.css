@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+
+
+* {
+  color:blueviolet;
+}
+h1 ~ * { /*인접형태선택자*/
+  font-size:30px;
+  font-weight: bold;
+}
+
+div.box_wrapper {
+  background-color: orange;
+  /*고정 너비*/
+  width: 500px; height:300px;
+  /*가변 너비*/
+  /* width: 50%; height:50%; 
+  세로의 %는 부모 높이 값이 정의되어 있는 경우에만 적용
+  */
+}
+
+div.box_wrapper > div.block1 {
+background-color: lightcoral;
+  /* width: 300px; height: 100px; */
+  width: 70%; /*부모를 기준으로 100분의 70*/ 
+  height:70%; /*부모를 기준으로 100분의 50*/
+}
+div.box_wrapper > span.inline1 {
+background-color: beige;
+color: brown;
+ width:200px; height: 200px;
+}
+
+p.block2{
+background-color: chartreuse;
+  height:100px;
+}
+span.inline2{
+background-color: firebrick;
+  height:200px;
+}

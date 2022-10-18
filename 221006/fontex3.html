@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>fofmex3</title>
+<style>
+  body{
+    font-family: '휴먼편지체',sans-serif;
+    color: brown;
+    font-size: 30px;
+  }
+  /*서체 관련 특성은 폼관련 요소에 직접 적용*/
+  form > fieldset > button{
+    color:#ddd;
+    font-size:20px;
+    background-color:#000;
+    font-family:'돋움'sans-serif;
+    cursor:pointer;
+  }
+  form > fieldset>input{
+    font-family:'나눔고딕',sans-serif;
+    font-size:20px;
+    color:peru;
+    background-color: #ddd;
+  }
+  legend{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:30px;
+    background-color: yellow;
+    color: blueviolet;
+  }
+
+
+  /*
+    form > fieldset > input[type="text"]{ 속성(특성) 선택자
+    input 요소가 가지고 있는 속성들 중에 type의 값이 text인 선택자 */ 
+  form > fieldset > input[type=text]:hover {
+    background-color: orange;
+  }
+  form > fieldset > button:hover{
+    background-color: blue;
+  }
+  /* :checked 라디오 버튼이나 체크 박스에 체크가 되면 */
+  form > fieldset > input[name=box]:checked ~ label {
+    /*인접형제 선택자 : 기준 요소의 바로 뒤에 오는 형제 관계 선택자 */
+    background-color: red;
+    color : #000;
+  }
+  </style>
+</head>
+<body>
+<form>
+  <fieldset>
+    <legend>form event</legend>
+    <input type="text" id="hint" placeholder="힌트">
+    <button type="submit" id="button2">전송</button>
+  </fieldset> 
+  <fieldset>
+    <legend>:checked</legend>
+    <input type="checkbox" id="box"name="box" value="체크">
+    <label for="box">체크1</label>
+    <label>체크2</label>
+  </fieldset>
+</form>
+</body>
+</html>

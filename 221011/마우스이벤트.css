@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+body{
+  /*상속 inherbit*/
+  font-family: 'HY견고딕','나눔고딕',sans-serif;
+  font-size:20px;
+  font-weight: bold;
+  line-height:1.6;
+  color:aqua
+}
+::selection{/*::selection 선택자를 드래그 했을 때, 앞에 실제하는 선택자 작성시
+  그 선택자만 드래그했을 때 적용*/
+  background-color: #967;
+  color: #fff;
+}
+h1{
+  line-height: 1;
+}
+
+a:link{/*링크 상태일 때(기본)*/
+ color:rgba(247, 9, 9, 0.533);
+ text-decoration: none;
+}
+a:visited{/*방문한 적이 있을 때*/
+  color: rgb(252, 106, 9);
+ }
+a:hover{/*마우스를 위에 올렸을 때*/
+ color: #a149fa;
+ text-decoration: line-through;
+}
+a:active{/*마우스로 클릭했을 때*/
+ color: rgb(21, 6, 240);
+ text-decoration: underline;
+}
+/*
+:,::
+가상 선택자로 다양한 종류가 있으며 주로 실제하는 요소와 함께 작성
+:link,:visited,:hober,:focus,:checked ..
+*/
+
+a{/*요소 성격의 밑줄과 고유색을 가지고 있기 때문에 직접
+  적용해야 변경 됨*/
+  color:black;
+ text-decoration: none; 
+}
+a:hover{
+  background-color: #a149fa;
+  color:#fff;
+  /*레이아웃이 무너질 수 있기 때문에 이런 방식은 잘 사용하지 않음*/
+  font-size: 30px;
+  font-weight: bold;
+}

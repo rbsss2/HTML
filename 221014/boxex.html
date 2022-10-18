@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>boxex</title>
+<style>
+body{
+  text-align: center;
+  margin:auto;
+  width:600px;
+  font-family:'나눔고딕','고딕',돋움,sans-serif;
+}
+ img{
+  width:602px;
+  margin:-30px auto;
+ }
+  
+  h2{ 
+    text-align: left;
+    background-color: black;
+    color:white;
+    margin:0px auto;
+    width:590px;
+    padding:10px 5px;
+    border:1px solid black;
+  }
+  .order, .change, .service{
+    background-color: lightcoral;
+    margin:0px auto;
+    padding:5px 0px;
+    border:1px solid black;
+    width:600px;
+  }
+  .order .delevery, .change .back, .service .center{
+    color:blue;
+    font-weight: bold;
+  }
+  .order strong{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .service .tel{
+    color:green;
+    font-weight:bold;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="checked"><img src="images/top.jpg" alt="가정용꿀사과">
+  </h1>
+  <h2>확인하세요</h2>
+  <div class="order">
+    <p class="delevery">주문 및 배송</p>
+    <p><strong>오후 2시 이전 주문 건</strong>은 당일 발송합니다.</p>
+    <p>2시 이후 주문건은 다음날 발송합니다(주말 제외)</p>
+  </div>
+  <div class="change">
+    <p class="back">교환 및 환불</p>
+    <p>불만족시 100% 환불해 드립니다.</p>
+    <p>고객센터로 전화주세요.</p>
+  </div>
+  <div class="service">
+    <p class="center">고객센터</p>
+    <p class="tel">031-1234-5210</p>
+    <p>상담시간:오전0시~오후12시(토/일포함,연중무휴)</p>
+  </div>
+</div>
+</body>
+</html>
+
+<!-- section.box*2>h3+p*2
+section.box>h3+add+P -->

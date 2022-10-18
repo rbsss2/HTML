@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>요소의 실제 크기 box size2</title>
+<style>
+  .box{
+    font-weight:bold;
+    background-color: #eee;
+  }
+  .box1{
+    background-color: #255,255,255,0;
+    width:400px; height:300px;
+    outline:10px solid #000;
+    margin:50px auto;
+    padding:15px;
+  }
+  .box2{
+    border:solid 3px #574;
+    width:300px; height:300px;
+    margin:0 auto;
+    padding-top:100px; padding-left:20px;
+  }
+  .box3{
+    background-color: #431;
+    outline:4px solid #000;
+    width:300px; height:400px;
+    margin:20px auto 0; /*위 20 오왼auto 아래 0*/
+    padding:20px 10px 0 30px;
+  }
+  .box4{
+    border:#848 dotted 2px;
+    border-top:none;
+    width:400px; height:200px;
+    outline:rgba(21,12,214,0.7) 30px solid;
+    margin:20px auto 0;
+padding:10px 20px 0 0;
+  }
+  .box5{
+    width:600px; height:250px;
+    padding:50px 20px;
+    margin:20px 0 40px 10px;
+    border:10px double red;
+    border-right-width:5px;
+  }
+  </style>
+</head>
+<body>
+  <h1>요소의 실제 크기 box size2</h1>
+  <div class="box box1">
+    <p>가로:w400+m(auto=0) + p15+15 +b0=430px</p>
+    <p>세로:h300+m(50+50) + p15+15 + b0=430px</p>
+  </div>
+  <div class="box box2">
+    <p>가로:w300 m0 p20 b3+3 = 326px</p>
+    <p>세로:h300 m0 p100+0 b3+2 = 406px</p>
+  </div>
+  <div class="box box3">
+    <p>가로:w300+m0 p 10 + 30 b0 = 340px</p>
+    <p>세로:h400 +m20+0 p20+0 b0 = 440px </p>
+  </div>
+  <div class="box box4">
+    <p>가로:w400 m(auto) p20 b2+2 = 424</p>
+    <p>세로:h200 m20 0 p10 0 b0+2 232</p>
+  </div>
+  <div class="box box5">
+    <p>가로:w600 m0+10 p20+20 b10+5 = 665px</p>
+    <p>세로:h250 m20+40 p 50+50 b10+10= 430</p>
+  </div>
+</body>
+</html>

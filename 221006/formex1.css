@@ -1,0 +1,34 @@
+@charset "utf-8";
+#menu1{
+ font-family:'돋움', '고딕',serif;
+ font-size: 14px; 
+ color: blue;
+}
+#menu2{
+  font-family: '굴림';
+  font-style: italic;
+  font-size:16px;
+  color: #E8334D;
+}
+#menu3{
+  font-family:'돋움';
+  font-size:12px;
+  text-decoration: underline;
+}
+#menu4{
+  text-indent:10px;
+  font-family:'돋움';
+  font-size :15px;
+}
+#menu5{
+  line-height: 50px;
+  font-family:'돋움';
+  font-size:16px;
+  color: green;
+}
+#menu6{
+  text-align: right;
+  font-family:'굵은 돋움';
+  text-decoration: underline;
+  font-size: 20px;
+}

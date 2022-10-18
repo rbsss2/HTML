@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+table {
+
+  font-family: '나눔고딕','맑은 고딕',sans-serif;
+  font-size : 16px;
+  color: #222;
+  line-height: 1.5;
+}
+
+table caption{
+  font-family: '나눔고딕','맑은 고딕',sans-serif;
+  font-size: 40px;
+  line-height: bold;
+  text-align: left;
+  text-indent: 20px;
+  background-color: pink;
+  color: aliceblue;
+  
+}
+
+
+table thead th{
+  background-color: blueviolet;
+  color: aliceblue;
+  text-align : left;
+  text-indent: 10px;
+  line-height: 2em;
+
+}
+
+table tbody td{
+  background-color: azure;
+  vertical-align: top;
+  max-width:200px;/*최대값 이 값 이상으로 커지지않음r*/
+  min-width:100px;/*최소값 이 값 이하로 작아지지않음*/
+}
+table tbody .txt{
+  max-width:750px; /*750 이상으로 커지지 않음*/
+  min-width:400px; /*400 이하로는 작아지지 않음*/
+}
+
+/*
+  테이블 요소의 성격:
+  ㄴ 셀 안의 컨텐츠는 세로 중앙 정렬이 기본
+  ㄴ 셀 안의 컨텐츠 경우 th는 가로 중앙 정렬, td는 가로 왼쪽 정렬
+  ㄴ table 요소에 width값 적용시 각 셀의 제어가 어려움
+  ㄴ 셀 하나의 가로, 세로 값을 주면 일반적으로 나머지 셀들도 따라감
+  */
