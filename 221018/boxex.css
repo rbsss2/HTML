@@ -1,63 +1,7 @@
 @charset "UTF-8";
 
 body{
-  text-align: center;
-  background-color: #FFF;
-  font-family: '나눔고딕','고딕',돋움,sans-serif;
-  text-align:bold;
-}
-.box{
-width:800px; height:500px;
-margin:20px auto 30px;
-padding:20px 30px;
-border: 10px double #000;
-border-bottom-width:5px;
-}
-.box1{
-  box-sizing:content-box;
-
-}
-.box ul{
-  text-align: center;
-  margin:0 auto;
-  padding:10px;
-  
-  
-}
-.logo{
-  padding:10px;
-}
-
-.box .menu{
-  width:580px;
-  border-top:5px solid #000;
-  border-bottom:3px solid #111;
-  text-align: bold;
-}
-.box .menu li{
-  display:inline-block;
-  padding:10px;
-}
-.box .menu .home{
-  color:red;
-}
-.keyboad{
-  margin:20px auto;
-  margin-bottom:0px;
-  
-}
-.box .piano{
-  text-align: right;
-  max-width:700px;
-  
-}
-.box .piano a{
-  border:1px solid #FFF;
-  background-color: #000;
-  color:#FFF;
-  text-decoration: none;
-}
-.box .piano a:hover{
-  background-color: lightskyblue;
-  
+  font-family:'noto Sans KR',-apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,sans-serif;
+  font-size:18px;
+  font-weight: 300px;
 }
