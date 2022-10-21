@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>tablestyle Ex2</title>
+<style>
+  body{
+    background-color: green;
+    text-align:center;
+  }
+  h1{
+    text-align:center;
+  }
+  table{
+    border-collapse:collapse;
+    background-color: green;
+    /* border:3px solid chocolate; */
+    width: 1000px;
+    margin:0 auto;
+    border-top: none;
+    
+  }
+  table caption{
+    line-height:center;
+    border:3px double chocolate;
+    background-color: chocolate;
+    color:#FFF;
+    border-bottom:none;
+    padding:4px 0;
+    text-align:bold;
+  }
+
+  table td{
+    border:1px solid chocolate;
+    width:110px;
+    height:28px;
+    background-color: lightpink;
+  }
+  table td .block{
+   display: block; 
+  }
+   
+  table .foot_bg td{
+    border-top: 6px solid chocolate;
+    background-color: darkcyan;
+  }
+  table span a{
+    background-color: darkgrey;
+    color:#fff;
+    text-decoration: none;
+  }
+  table span a:hover{
+    background-color: #000;
+  }
+  table .none{
+    background-color: transparent;
+  }
+  </style>
+</head>
+<body>
+  <h1>table style 연습2</h1>
+  <table>
+    <caption>소 cow</caption>
+    <tr><!--1행-->
+      <td>소 머리</td>
+      <td>목심</td>
+      <td>등심<span class="block">(살치살 &middot; <a href="#">꽃등심</a>)</span></td>
+      <td>채끝살</td>
+      <td>우둔<span class="block">(홍두깨살)</span></td>
+    </tr>
+    <tr>
+    <td rowspan="4" class="none"></td>
+      <td rowspan="2">앞다리<span class="block">(부채살)</span>/</td>
+      <td>갈비<br>안창살·제비추리)</td>
+      <td>안심</td>
+      <td rowspan="2">설도<span class="block">(도가니살)</span></td>
+    </tr>
+    <tr>
+    
+      <td colspan="2">양지<span class="block">(차돌박이·우삼겹)</span></td>
+    </tr>
+    <tr>
+      
+      <td>사태</td>
+      <td colspan="2" rowspan="2" class="none"></td>
+      
+      <td>사태<span class="blcok">(아롱사태)</span></td>
+    </tr>
+    <tr class="foot_bg">
+      <td>우족</td>
+      <td>우족</td>
+    </tr>
+  </table>
+</body>
+</html>

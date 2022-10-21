@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+  width:1920px;
+  text-align: center;
+  background-color: #efefef;
+  font-family:'나눔고딕','고딕',돋움,sans-serif;
+  font-size:18px;
+}
+.dd{
+text-align:left;
+}
+.wise{
+  text-indent: 10px;
+  text-align: left;
+ }
+strong{
+  font-weight:bold;
+}
+.container{
+  background-color: orange;
+  margin:0 auto;
+ 
+}
+.container li{
+  text-align: center;
+  display:inline-block;
+  background-color: red;
+  
+
+}
+.container li a{
+  background-color: blue;
+  text-decoration: none;
+ 
+  padding-bottom:10px;
+}
+
+.tomori{
+  width:1920px; height:100px;
+}

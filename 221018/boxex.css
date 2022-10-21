@@ -1,7 +1,72 @@
 @charset "UTF-8";
 
 body{
-  font-family:'noto Sans KR',-apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,sans-serif;
+  font-family:'noto Sans KR',-apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
   font-size:18px;
   font-weight: 300px;
+  background-color: #efefef;
+}
+.container{ /*가로=maxw+margine+padding+border*/
+  max-width:980px;
+  min-width:600px;
+  /* max-width:952px; 980+0+10+10+4+4 = 1080px */
+  
+  box-sizing:border-box;
+
+  margin:18px auto; /*중앙정렬최고봉*/
+  padding:30px 10px 60px;/*사이드 값은 영역안에서 주는게 이상적*/
+  border:double 4px #000; /*두개의 선 간격 픽셀 조정*/
+  background-color: #fff;
+}
+.container h1{
+  /* background-color: orange;
+  text-align:center; 처음으로 돌아가는 클릭을 줄때 이렇게 주면 영역이 넓어 x*/
+  width:150px;
+  margin: 0px auto;
+}
+.container .gnb{
+  /* text-align:center;li가 인라인블록이기 때문에 li가 중앙정렬 */
+  width:521px;
+  margin:20px auto;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #000;
+  padding:14px 40px;
+  /* background-color: orange;  */
+}
+.container .gnb li{
+  display:inline-block;/*넓이 인식*/
+  /* margin:10px 20px; 
+  padding:10px 20px; */
+  width:100px;
+  /* background-color: range; */
+}
+
+.container .gnb li a {
+  text-decoration: none;
+  color:inherit;/*부모의값을 물려 받겠다*/
+  font-weight: 500;
+}
+.container .gnb li a:hover,
+.container .gnb li.active a {/*종속선택자*/
+  color:red;
+}
+
+.container figure{
+  /* background-color: orange; */
+  width:600px; 
+  margin:0 auto;
+  text-align: right;
+}
+
+.container figure figcaption{
+  display:inline;/*figcaption이 인라인(레이아웃을 구성할 대 잘안씀*/
+  background-color:#000;
+  line-height: 2;
+  color:#FFF;
+}
+.container p{
+  width:48.9795%;
+  text-align:center;
+  line-height: 1.6;
+  margin:20px auto;
 }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>form style</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Noto+Sans+KR:wght@300;500&display=swap');
+  form{
+    background-color: #ddd;
+    width:500px;
+    margin:0 auto;
+    overflow:hidden;
+    /* padding:20px 0; */
+  }
+  form * {
+    font-family:'Black And White Picture',sans-serif;
+  
+  }
+  form fieldset{
+    border:#18335f 3px solid;
+    border-radius:20px;
+    background-color: #fff;
+    width:300px;
+    margin:50px auto;
+    /*
+    마진상쇄 현상: 일반적인 흐름에서, 자식의 margin-top과 부모의
+    margin-top이 만나면 둘 중 큰 값이 부모에게 적용.
+    마진상쇄 현상으르 해결하기 위해부모 요소에 overflow:hidden;
+    */
+    padding:20px 30px;
+    text-align:right;
+  }
+  form fieldset legend{
+    background-color: #19335f;
+    color:#fff;
+    padding:5px 10px;
+    text-align: left;
+  }
+  form fieldset input{
+    width:220px;
+    outline: none;/*chrome,edge,whail등 모던 브라우저에서 생기는 현상으로
+    포커스 상태일 때의 테두리 없앰*/
+    border:1px transparent solid;
+    border-bottom-color:#19335f;
+    padding:2px;
+    margin-bottom:10px;
+    
+  }
+  /* 속성선택자: 요소[속성=값] 요소[속성]*/
+  form fieldset input[required ]:hover{
+    border:1px solid #19335f;
+  }
+  form fieldset input[name="user_name"]:focus{
+    background-color:#ED22d2;
+  }
+  form fieldset input[type=email]:focus{
+    background-color:#F09AEE;
+  }
+  form fieldset button{
+    background-color: gold;
+    color:#fff;
+    cursor:pointer;
+    padding:2px 10px;
+    border:none;
+  }
+  form fieldset button:hover{
+    background-color: silver;
+  }
+  </style>
+</head>
+<body>
+  <!--폼 관련 요소 그룹화-->
+  <form>
+  <fieldset>
+    <legend>회원가입</legend>
+    <iable for="username">이름:</iable>
+    <input type="text" id="username" name="user_name" required><br>
+    
+    <label for="userEmail">이메일:</label>
+    <input type="email" name="user_email" id="userEmail" required><br>
+
+    <button type="submit">가입</button>
+    <button type="reset">취소</button>
+    </fieldset>
+  </form>
+  <!-- 
+    <button>
+        폼과 관련된 값을 서버러 전송할 때
+        사용자와의 상호작용이 필요할 때(값을 서버에 전송하고 그
+        결과를 사용자에게 피드백할 때 사용)
+
+    <a>
+      다른 페이지로의 이동이 필요할 때,
+      페이지 간의 이동(더보기, 새창 띄우기, 서브페이지 이동 등)
+
+   -->
+</body>
+</html>
