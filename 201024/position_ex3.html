@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>positionEx3</title>
+<style>
+body{
+  margin:0;
+}
+  .box{
+    width:100%; height:1000px;
+    margin:0 auto;
+    padding:100px 0;
+    text-align: center;
+    font-family: '나눔 고딕',sans-serif;
+    font-size:40px;
+    display:
+  }
+  .box1, .menu1{
+    background-color: lightskyblue;
+    
+  }
+  .box2, .menu2{
+    background-color: lightyellow;
+  }
+  .box3, .menu3{
+    background-color: lightcoral;
+  }
+  .wrapper{
+    position:fixed;
+    top:0; left:50%;
+    margin-left:-200px;
+    margin-top:0px; 
+    text-align: center;
+    border-bottom:5px solid #000;
+    border-radius:0 0 20px 20px;
+    background-color: #fff;
+    width:400px;
+    list-style:none;
+    padding-left:10px;
+    padding-right:10px;
+    
+  }
+  .wrapper .menu1{
+    /* background-color: lightblue; */
+  }
+  .wrapper .menu2{
+    /* background-color: lightyellow; */
+    
+  }
+  .wrapper .menu3{
+    /* background-color: lightcoral; */
+   
+  }
+  .wrapper a{
+    text-decoration: none;
+    color:#000;
+    
+  }
+  </style>
+</head>
+<body>
+  <div class="container"> 
+  <p class="box box1" id="box1">section1</p>
+  <p class="box box2" id="box2">section2</p>
+  <p class="box box3" id="box3">section3</p>
+
+  <ul class="wrapper">
+    <li class="menu1"><a href="#box1">section1</a></li>
+    <li class="menu2"><a href="#box2">section2</a></li>
+    <li class="menu3"><a href="#box3">section3</a></li>
+  </ul>
+</div>
+</body>
+</html>

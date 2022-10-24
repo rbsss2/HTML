@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>positionex4</title>
+  <link rel="stylesheet" href="../common/minireset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Lobster&family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+  .blink{ 
+    height:3000px;
+  }
+  a {
+
+    text-decoration:none;
+    color:inherit;
+  }
+  li{
+    display:inline-block;
+  }
+  header{
+    background-color: #EE2349;
+    font-family: 'Black And White Picture','Noto Sans KR',돋움,sans-serif;
+    max-width:1240px; min-width:960px;
+    /* margin:0 auto;
+     */
+    height:140px;
+    text-align: center; 
+    position:fixed;
+    top:0; left:0; right:0;
+    margin:auto;
+  }
+    /* 로고 */
+    header h1{
+      background-color: #A2e3e3;
+      width:120px; height:60px;
+      line-height: 60px;
+      font-size:20px; font-weight:bold;
+      font-family:'Noto Sans KR',돋움,sans-serif;
+
+      position:absolute;
+      left:10px; bottom:10px;
+    }
+    header h1 a {
+      color:#000;
+      text-decoration: none;
+    }
+    /* regisiter */
+    header #register{
+      background-color: #ddd;
+      width:150px;
+      position:absolute;
+      right:20px; top:0;
+
+      padding:4px 0;
+    }
+    header #register li{
+      padding: 0 4px;
+    }
+    header #register li a {
+      color:#007766;
+      font-size:14px;
+  }
+  header #register li a:hover{
+    color:#822737;
+  }
+  header .gnb{
+    background-color: #EE5007;
+    position:absolute;
+    right:20px; bottom:16px;
+  }
+  header .gnb li a {
+    font-family:'Noto Sans KR',돋움,sans-serif;
+    text-transform: capitalize;
+    font-size:24px;
+    color:#fff;
+
+    padding:10px 20px;
+    display:block;
+  }
+  header .gnb li a:hover{
+    background-color: #fff;
+    color:#EE5507;
+    cursor:pointer;
+  }
+ </style>
+</head>
+<body>
+  <header>
+  <h1><a href="#">로고</a></h1>
+  <ul id="register">
+    <li><a href="#">로그인</a></li>
+    <li>|</li>
+    <li><a href="#">회원가입</a></li>
+  </ul>  
+  <ul class="gnb">
+    <li><a href="#" class="menu1">menu1</a></li>
+    <li><a href="#" class="menu2">menu2</a></li>
+    <li><a href="#" class="menu3">menu3</a></li>
+    <li><a href="#" class="menu4">menu4</a></li>
+  </ul>
+  
+</header>
+<div class="blink">여백</div>
+</body>
+</html>

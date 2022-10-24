@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>position 연습2</title>
+<style>
+  html{
+    scroll-behavior: smooth; /*부드러운 스크롤*/
+  }
+  ::selection{ /*문서를 드래그 햇을 때 */
+  /* text-decoration: underline; */
+  background-color: #82C233
+  }
+  h1::selection{
+    background-color: khaki;
+  }
+  strong{
+    background-color: brown;
+    color:#fff;
+  }
+  .blank{
+    height:3000px;
+  }
+  
+  .btn{
+    position:fixed;
+    bottom:10px; right:10px;  
+    /* 
+      fixed;
+      컨텐츠가 없어도 body 영역 전체가 인식이 됨
+      인라인 요소의 가로 세로 값 인식이 됨
+    */
+    border:20px rgb(198, 199, 121) solid;
+    border-radius: 50%;
+    background-color: rgb(219, 189, 57);
+    color:#fff;
+    text-decoration: none;
+    font-size:30px;
+    font-weight:bold;
+    width:60px; height:60px;
+    text-align:center;
+    line-height:60px;
+  }
+  .btn:hover{
+    background-color: #82C233;
+    bottom:34px;
+  }
+  </style>
+</head>
+<body>
+  <h1 id="top">positon 연습2</h1>
+  <p>fixed값을 사용하는 요소 역시 absolute값을 사용하는 요소처럼
+    문서 흐름관느 상관 없이 좌표로 위치를 결정하지만, 기준이 되는 요소가
+    부모 요소가 아니라 <strong>브라우저가 기준</strong>이 된다.</p>
+    <p> 한번 배치되면 pixed라는 이름철머 브라우저 창을 스크롤하더라도
+      계속 고정되어 표시된다
+    </p>
+    <div class="blank"></div>
+    <a href="#top" class="btn" >위로</a>
+   
+  
+</body>
+</html>
