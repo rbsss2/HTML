@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>::before, ::after</title>
+<style>
+  p{
+  border:2px solid #000;
+  }
+  p::before{
+    content:"설명 :"; /*생략불가능*/
+    background-color: #ddd;
+  }
+  p::after{
+    content:""; /*생략은 할 수 없으나 ""안에 작성하지 않아도 된다.*/
+    background-color: #ddd;
+    /* width:200px; 인라인요소로 적용되지 않음 적용하려고하면 display:block 값을 줘야한다. */
+  }
+  ol .box1::before{
+    content: "https://google.com :";
+  }
+  ol .box2::before{
+    content: "https://naver.com :";
+    color:burlywood;
+    background-color: grey;
+    margin-right:50px;
+  }
+  ol .box3::before{
+    content: "https://kakao.com :";
+    font-weight:bold;
+    display:block;
+  }
+
+  ul .box1::after{
+    content: "";
+  }
+  ul .box2::after{
+    content:"🕕";
+  }
+  ul .box3::after{
+    content: "-&lt;"; /*값으로 작성되는 부분 ""은 텍스트 컨텐츠의 영역으로 코드 값x*/
+  }
+  </style>
+</head>
+<body>
+  <h2>:before, ::befor</h2>
+  <p>기준 요소 안의 컨텐츠 영역 앞쪽에 적용. 의사 요소</p>
+  <ol>
+    <li class="box1">구글</li>
+    <li class="box2">네이버</li>
+    <li class="box3">카카오</li>
+  </ol>
+  <h2>:after, ::after</h2>
+  <p>기준 요소 안의 컨텐츠 영역 뒤쪽에 적용.</p>
+  <ul>
+    <li class="box1">구글</li>
+    <li class="box2">네이버</li>
+    <li class="box3">카카오</li>
+  </ul>
+</body>
+</html>
