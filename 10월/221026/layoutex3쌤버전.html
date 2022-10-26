@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>제목</title>
+<style>
+  /* */
+  body{
+    margin:0;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+  }
+  ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+
+  ul li{
+    float:left;
+  }
+.box{
+  margin: 30px auto;
+  width:940px; height:60px; line-height: 60px;
+}
+  nav{
+    background-color: rgb(238, 32, 32);
+  }
+  nav .gnb{
+    /* background-color: #ddd; */
+    width:600px;
+    margin:0 auto;
+  }
+  /* .clearfix */
+  nav .gnb::after{
+    content:"";
+    display:block;
+    clear:both;
+  }
+  nav .gnb a{
+    display:block;
+    color:#fff;
+    width:120px;
+  }
+  nav .gnb a:hover{
+    background-color: green;
+  }
+  article{
+    background-color: rgb(197, 247, 62);
+  }
+  article h2{
+    margin:0;
+  }
+  
+  .wrapper{
+  overflow:hidden;
+
+}
+  .wrapper li{
+   width:300px;
+   background-color: rgba(60, 167, 216, 0.452);
+  }
+  .wrapper li:nth-child(2){
+    margin:0 20px;
+  }
+  footer {
+    background-color: rgb(159, 46, 235);
+  }
+  </style>
+
+</head>
+<body>
+      <h1>로고</h1>
+    
+    <nav class="box">
+      <ul class="gnb">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">상품</a></li>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">서비스</a></li>
+        <li><a href="#">연락처</a></li>
+      </ul>
+    </nav>
+    <article class="box">
+      <h2>컨텐츠</h2>
+    </article>    
+      <ul class="wrapper box">
+        <li>1번째 열</li>
+        <li>2번째 열</li>
+        <li>3번째 열</li>
+      </ul>
+    
+    <footer class="box">
+      <p>&#169;&copy;copyright 2022</p>
+    </footer>
+    
+</body>
+</html>

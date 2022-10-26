@@ -6,60 +6,66 @@
   <title>수열선택자ex</title>
 <style>
   #gnb{
-    list-style: none;
+    list-style:none;
     padding:0;
-    font-size:20px;
-    font-weight:bold;
-    margin:0 auto;
-    width:800px;
-    font-size:20px;
-    font-weight:bold;
     text-align:center;
-    overflow: hidden;
+    font-size:20px;
+    margin:50px auto;
+    /* width:900px; */
+    width:90% /*전체 비율에 80%만 차지하겠다*/
   }
   #gnb li{
-    float:left; 
-    
+    float:left;
+   width:11.111111%;
   }
   #gnb li a{
-    width:70px;
+    text-decoration:none;
+    color:inherit;
+    background-color: #ddd;
+    display:block;
+    /* width:100px; */
     height:50px;
     line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    border:3px solid black;
-    background-color: lightcyan;
-    margin:0 auto;   
-    display:block;
   }
-#gnb .none1 a{
-  border-radius: 30px 0 0 30px;
-}
-#gnb .none2 a{
-  border-radius: 0 30px 30px 0;
-}
-#gnb a:nth-child(even){
-  color:red;
-}
-#gnb a:nth-child(odd){
-  background-color: blue;
+ #gnb li:first-child a { /*li중에서 첫번째 a에 적용시키겠다.*/
+    border-radius: 30px 0 0 30px;
  }
-
+ #gnb li:last-child a{ /*li중에서 마지막 a에 적용시키겠다*/
+    border-radius: 0 30px 30px 0;
+ }
+ #gnb li:nth-child(2n) a{/*=(even),(2n+2),li중에서 짝수 마지막 a 주겠다*/
+  background-color: #5e243a;
+ }
+ #gnb li:nth-child(4n+3) a{ /*4개중에 3번째에 적용*/
+  background-color: #8584e2;
+ }
+#gnb li:nth-of-type(4n+1) a{
+  background-color: yellow;
+}
+#gnb li:nth-of-type(4n+1) a:hover{ /*=:hover a*/
+  background-color: silver;
+  cursor:grab;
+}
   </style>
 </head>
 <body>
   <!-- 마우스 이벤트 1,5,9 -->
   
   <ul id="gnb">
-    <li class="none1"><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
+    <li>
+      <a href="#">1</a>
+    </li>
+    <li>
+      <a href="#">2</a>
+    </li>
+    <li>
+      <a href="#">3</a></li>
     <li><a href="#">4</a></li>
-    <li class="mouse1"><a href="#">5</a></li>
+    <li><a href="#">5</a></li>
     <li><a href="#">6</a></li>
     <li><a href="#">7</a></li>
     <li><a href="#">8</a></li>
-    <li class="none2"><a href="#">9</a></li>
+    <li><a href="#">9</a></li>
   </ul>
 </body>
 </html>

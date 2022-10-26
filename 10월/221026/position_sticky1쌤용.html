@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>제목</title>
+<style>
+  body,h1,h2{
+    margin:0;
+  }
+  header,footer{
+    background-color: green;
+    height:100px;
+    /* box-sizing:border-box; */
+    padding:10px;
+  }
+  main{
+    background-color: #ddd;
+    /*float:left*/
+    /* overflow:hidden; */
+  }
+  /* main::after{} */
+
+  /* 미리 만들어놓은 다음 필요할대마다 html에 적용해 사용하기 위해서 */
+  .clearfix::after{
+      content:"";
+      display:block;
+      clear:both;
+}
+  main article{
+    background-color: yellow;
+    float:left;
+    height:3000px;
+    width:70%;
+  }
+  main aside{
+    background-color: palevioletred;
+    float:left;
+    height:200px;
+    width:30%;
+  
+    position:sticky;
+    /* relative,absolute와 같이 썼을경우 float가 우선 순위로 적용됨 */
+    /*부모 요소들 중 overflow:hidden이 적용되어 있으면 작동하지 않음
+      height값이 %인 경우도 작동하지 않음
+    */
+    top:0px;
+  }
+</style>
+</head>
+<body>
+  
+    <header>
+    <h1>position:sticky</h1> 
+    <h2>header</h2>
+    </header>
+    <main class="clearfix">
+  <article>
+    <h2>main-contents</h2>
+  </article>
+
+  <aside>
+    sticky-sidebar
+  </aside>
+</main>
+  <footer>
+    footer
+  </footer>
+ 
+ 
+ 
+</body>
+</html>

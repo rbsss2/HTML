@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>제목</title>
+<style>
+  body{
+    /* width940 */
+    
+  }
+  .box{
+    text-align: center;
+    width:940px; 
+    margin:0px auto;
+  
+  }
+  .box ul{
+    list-style: none;
+    padding:0; 
+  }
+  .box .border{
+   float:left;
+   width:940px;
+  }
+ 
+  .box li a{
+    background-color: aquamarine;
+    display:block;
+    height:50px;
+    line-height: 50px;
+    float:left;
+    width:100px;
+  
+  }
+  .box article li:first-child a{
+    padding-left:220px;
+  }
+  .box article li:last-child a{
+    padding-right:220px;
+  }
+  .box .content{
+    float:left;
+    width:940px;
+    background-color: aqua;
+    height:50px;
+    line-height:50px;
+    margin: 20px auto 0px auto;
+  }
+  aside li{
+    background-color: orange;
+    float:left;
+    width:300px;
+    margin:10px 10px;
+    height:50px; line-height:50px;
+    
+  }
+  aside li:first-child { /*li중에서 첫번째 a에 적용시키겠다.*/
+    margin-left:0px;
+ 
+ }
+ aside li:last-child{
+  margin-right:0px;
+ 
+ }
+  footer p{
+    float:left;
+    background-color: blueviolet;
+    height:50px; width:940px;
+    line-height:50px;
+    margin-top:10px;
+ }
+
+/*  .clearfix::after{
+        content:"";
+        clear:both;
+        display:block;
+   } */
+
+  </style>
+</head>
+<body>
+  <div class="box border">
+  <header>
+    <h1>로고</h1>
+  </header>
+  <article class="border">
+    <ul>
+      <li><a href="#">홈</a></li>
+      <li><a href="#">상품</a></li>
+      <li><a href="#">소개</a></li>
+      <li><a href="#">서비스</a></li>
+      <li><a href="#">연락처</a></li>
+    </ul>
+  </article>
+      <p class="content">컨텐츠</p>
+  <aside class="border">
+    <ul>
+      <li>1번째열</li>
+      <li>2번째열</li>
+      <li>3번째열</li>
+    </ul>
+  </aside>
+  <footer class="border">
+    <p>&#169; copyright 2022</p>
+  </footer>
+  </div>
+</body>
+</html>
