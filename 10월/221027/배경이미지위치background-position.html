@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>배경이미지 위치 backgroun-position</title>
+<style>
+  body{
+    background-image:url(/images/tulip.gif);
+    background-repeat:no-repeat;
+    background-position: 0 0; /*기본값  x축 y축*/
+    background-position:left top;/*left==0 top==0 center==50% right==100%, bottom==100%*/
+    background-position:400px 200px; /*object와 마찬가지로 400px에 정확히 위치함*/
+    background-position:50% 0;
+    background-position:100% 100%;/*바디값이 컨텐츠 위치까지만 가지기 때문에 해당 컨텐츠까지만 표시됨*/
+    /*
+      body 또한 자식의 높이값을 가져오기 때문에 배경이미지의 위치가 브라우저 끝으로 가지 않음
+    */
+  }
+  </style>
+</head>
+<body>
+  <h1>배경이미지 위치 background-position</h1>
+  <h2>1.목력(magnolia</h2>
+  <p>목련은 가장 푸르른 그날의 빛살구처럼 살구먹고싶네 그리고 또 뭐먹고싶지
+    김치지개도 먹고싶고 순대에 내장이 없는 떡볶이 집은 용서가안된다 정말
+    떡볶이먹고싶다 떡볶이엔 오뎅이 필순데 튀김은 김말이 감자 야채튀김 포테이토칩
+    햄버거가게는 666버거도 맛있는데 그리고 또 집에 가고 싶다.
+  </p>
+  <h2>2.집가는방법</h2>
+  <p>집가는 방법은 다양하다 비행기를 타고 갈 수도 있고 전철을 타고 갈 수도 있으며
+    택시를 타는 방법이있다 택시는 하지만 비행기값보다 싸겠지 그리고 또 뭐할수있지
+    걸어갈까 뛰어갈까 뛰어가면 얼마나 걸리지 오늘안에 갈 수 있을까 짱구보고싶ㄹ다
+    짱구부리부리 부리부리 야채튀김 야채를 먹으면 키가 자라나 키만 자라나 살도찌고
+    돼지같을것같다 그리고 집에가면 뭐하지
+  </p>
+  
+</body>
+</html>
